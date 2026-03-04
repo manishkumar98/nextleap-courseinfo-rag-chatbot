@@ -24,16 +24,13 @@ def create_vector_db(chunks_file, collection_name="nextleap_knowledge_base"):
     openai_api_key = os.getenv("OPENAI_API_KEY")
     
     if not openai_api_key:
-        print("⚠️ Warning: OPENAI_API_KEY not found in .env.")
-        print("Fallback: Using locally hosted embedding model (all-MiniLM-L6-v2) for now to proceed.")
-        # Fallback to a local model if the key is missing
-        embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
-    else:
-        # Use OpenAI Embeddings as per architecture
-        embedding_function = embedding_functions.OpenAIEmbeddingFunction(
-            api_key=openai_api_key,
-            model_name="text-embedding-3-small"
-        )
+        raise ValueError("❌ Error: OPENAI_API_KEY is required for production (to keep bundle size small). Please add it to your environment variables.")
+
+    # Use OpenAI Embeddings as per architecture
+    embedding_function = embedding_functions.OpenAIEmbeddingFunction(
+        api_key=openai_api_key,
+        model_name="text-embedding-3-small"
+    )
 
     # 3. Setup ChromaDB client (persistent)
     persist_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "vector_db")

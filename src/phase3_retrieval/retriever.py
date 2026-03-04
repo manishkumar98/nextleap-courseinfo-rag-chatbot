@@ -18,15 +18,12 @@ class NextLeapRetriever:
 
         # 2. Setup Embedding Function (matching Phase 2)
         if not openai_api_key:
-            # Fallback for local development
-            self.embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
-                model_name="all-MiniLM-L6-v2"
-            )
-        else:
-            self.embedding_function = embedding_functions.OpenAIEmbeddingFunction(
-                api_key=openai_api_key,
-                model_name="text-embedding-3-small"
-            )
+            raise ValueError("❌ Error: OPENAI_API_KEY is required for production (to keep bundle size small). Please add it to your environment variables.")
+
+        self.embedding_function = embedding_functions.OpenAIEmbeddingFunction(
+            api_key=openai_api_key,
+            model_name="text-embedding-3-small"
+        )
 
         # 3. Connect to ChromaDB
         self.client = chromadb.PersistentClient(path=persist_dir)

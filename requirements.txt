@@ -1,8 +1,7 @@
 fastapi
-uvicorn[standard]
+uvicorn
 chromadb
 groq
 python-dotenv
 openai
-sentence-transformers
 requests
