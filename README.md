@@ -62,7 +62,9 @@ An intelligent RAG (Retrieval-Augmented Generation) chatbot designed to provide 
 ## 🚢 Deployment
 
 > [!IMPORTANT]
-> **Why separate deployments?** The Python AI libraries (Torch, Transformers, ChromaDB) are over 5GB, which exceeds Vercel's 500MB serverless limit. We use **Render** for the backend because it supports large containerized environments.
+> **Why separate deployments?** Although we reduced the course data size, the Python AI libraries required for local embeddings (`torch`, `sentence-transformers`) are over **5GB**, which exceeds Vercel's 500MB limit. 
+> 
+> **Solution**: Keep the **Frontend on Vercel** and deploy the **Backend on Render** (which supports large AI environments).
 
 ### 1. Backend (FastAPI) -> Deploy on [Render](https://render.com)
 1.  **New Web Service**: Connect your GitHub repo.

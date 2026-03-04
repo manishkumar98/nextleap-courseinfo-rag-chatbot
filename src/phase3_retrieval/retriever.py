@@ -16,13 +16,9 @@ class NextLeapRetriever:
         project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         persist_dir = os.path.join(project_root, "data", "vector_db")
 
-        # 2. Setup Embedding Function (matching Phase 2)
-        if not openai_api_key:
-            raise ValueError("❌ Error: OPENAI_API_KEY is required for production (to keep bundle size small). Please add it to your environment variables.")
-
-        self.embedding_function = embedding_functions.OpenAIEmbeddingFunction(
-            api_key=openai_api_key,
-            model_name="text-embedding-3-small"
+        # Use local embeddings to avoid OpenAI costs/quota issues
+        self.embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name="all-MiniLM-L6-v2"
         )
 
         # 3. Connect to ChromaDB

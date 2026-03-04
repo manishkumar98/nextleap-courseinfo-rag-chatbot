@@ -20,16 +20,11 @@ def create_vector_db(chunks_file, collection_name="nextleap_knowledge_base"):
     with open(chunks_file, 'r') as f:
         chunks = json.load(f)
 
-    # 2. Get API Key
-    openai_api_key = os.getenv("OPENAI_API_KEY")
-    
-    if not openai_api_key:
-        raise ValueError("❌ Error: OPENAI_API_KEY is required for production (to keep bundle size small). Please add it to your environment variables.")
-
-    # Use OpenAI Embeddings as per architecture
-    embedding_function = embedding_functions.OpenAIEmbeddingFunction(
-        api_key=openai_api_key,
-        model_name="text-embedding-3-small"
+    # Use local embeddings to avoid OpenAI costs/quota issues
+    # Note: Requires 'sentence-transformers' in requirements.txt
+    print("🤖 Using local embedding model: all-MiniLM-L6-v2")
+    embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
+        model_name="all-MiniLM-L6-v2"
     )
 
     # 3. Setup ChromaDB client (persistent)

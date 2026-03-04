@@ -1,6 +1,6 @@
 {
-    "last_sync": "2026-03-04 21:54:18",
-    "status": "FAILED",
-    "detail": "Error during sync: Command '['/Library/Developer/CommandLineTools/usr/bin/python3', '/Users/binaykumarsinha/Desktop/AIBootcampProject/nextleap-rag-chatbot-1/src/phase2_embedding_indexing/create_embeddings.py']' returned non-zero exit status 1.",
+    "last_sync": "2026-03-04 21:56:26",
+    "status": "SUCCESS",
+    "detail": "Knowledge base updated with new data changes.",
     "data_hash": "d0c9678ebc6fc3e7dd2d81b3b066b0a7"
 }
