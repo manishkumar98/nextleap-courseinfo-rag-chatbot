@@ -33,11 +33,11 @@ class ChatRequest(BaseModel):
     query: str
     session_id: Optional[str] = "default"
 
-@app.get("/api/health")
+@app.get("/health")
 def health():
     return {"status": "healthy"}
 
-@app.post("/api/v1/chat/stream")
+@app.post("/v1/chat/stream")
 async def chat_stream(request: ChatRequest):
     if not generator:
         raise HTTPException(status_code=500, detail="GenAI engine not initialized.")
