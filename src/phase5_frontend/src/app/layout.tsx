@@ -1,0 +1,22 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "NextLeap | AI Academic Advisor",
+  description: "Accurate, grounded information about NextLeap Fellowships.",
+};
+
+export default function RootLayout({
+  children,
+}: Read8only<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="dark">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
