@@ -37,27 +37,22 @@ def health():
 
 @app.post("/api/v1/chat/stream")
 async def chat_stream(request: ChatRequest):
- if not generator:
-  raise HTTPException(status_code=500, detail="GenAI engine not initialized.")
- 
- def event_generator():
-  for part in generator.generate_stream(request.query):
-   if "|||" in part:
-    text_part, sources_part = part.split("|||", 1)
-    if text_part:
-     yield f"data: {json.dumps({'text': text_part})}\n\n"
-    try:
-     sources = json.loads(sources_part)
-    except:
-     sources = []
-    yield f"data: {json.dumps({'sources': sources})}\n\n"
-   else:
-    yield f"data: {json.dumps({'text': part})}\n\n"
-  yield "data: [DONE]\n\n"
+    if not generator:
+        raise HTTPException(status_code=500, detail="GenAI engine not initialized.")
+    
+    def event_generator():
+        for part in generator.generate_stream(request.query):
+            if "|||" in part:
+                text_part, sources_part = part.split("|||", 1)
+                if text_part:
+                    yield f"data: {json.dumps({'text': text_part})}\n\n"
+                try:
+                    sources = json.loads(sources_part)
+                except:
+                    sources = []
+                yield f"data: {json.dumps({'sources': sources})}\n\n"
+            else:
+                yield f"data: {json.dumps({'text': part})}\n\n"
+        yield "data: [DONE]\n\n"
 
- return StreamingResponse(event_generator(), media_type="text/event-stream")
-
-# Catch-all
-@app.get("/{full_path:path}")
-async def catch_all(full_path: str):
- return {"message": "API Active"}
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
