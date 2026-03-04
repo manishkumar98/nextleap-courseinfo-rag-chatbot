@@ -1,0 +1,38 @@
+name: Daily NextLeap Sync
+
+on:
+  schedule:
+    - cron: '30 4 * * *'  # Runs at 10:00 AM IST (04:30 UTC) every day
+  workflow_dispatch:      # Allows manual trigger from GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install Dependencies
+        run: |
+          pip install chromadb openai python-dotenv
+          # Note: In a real scenario, we'd install scraper deps like beautifulsoup4 or playwright here
+          
+      - name: Run Sync Engine
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python src/phase6_scheduler/sync_engine.py
+
+      - name: Commit Updated Vector DB
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: automated knowledge base update [skip ci]"
+          git push

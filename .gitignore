@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+.DS_Store
+
+# Data/DB (Vector DB can be large, but usually included in RAG demos if small)
+# data/vector_db/  <- Keep this commented if you want to push the pre-indexed DB
+# data/.last_sync_hash

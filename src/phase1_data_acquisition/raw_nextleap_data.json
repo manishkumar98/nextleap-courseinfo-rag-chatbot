@@ -1,0 +1,224 @@
+{
+    "courses": [
+        {
+            "title": "Product Manager Fellowship",
+            "url": "https://nextleap.app/course/product-management-course",
+            "duration": "16 Weeks",
+            "live_hours": "100+ Hours",
+            "base_cost": "₹49,999",
+            "discounted_cost": "₹34,999",
+            "next_cohort": "Cohort 48 (Starts April 4)",
+            "deadline": "8 Mar 11:59 PM",
+            "avg_salary": "14-18 Lakhs",
+            "highest_salary": "31 Lakhs",
+            "placement_support": "1 Year",
+            "instructors": [
+                "Arindam Mukherjee",
+                "Kartik Singh",
+                "Eshan Tiwari",
+                "Shailesh Sharma",
+                "Prashanth Bhaskar",
+                "Akash Agrawal",
+                "Ankita Pathak",
+                "Devansh Jain",
+                "Nikita Agrawal",
+                "Parth Dixit",
+                "Anuj Saxena"
+            ],
+            "curriculum": [
+                "Week 1: Mapping Business Outcomes to Product Outcomes - Systems thinking, Understanding Business Models, Structured thinking with KPI trees, Actors, Actions & Entities",
+                "Week 2: Product Discovery & User Research - Impact Mapping & Opportunity sizing, User Segmentation, User Research Techniques, Journey Mapping & Personas",
+                "Week 3: Problem Framing & Ideation - Problem Framing Canvas, Ideation & Product Risks, Outcome-Opportunity-Solution tree, User Flows & Wireframing",
+                "Week 4: UX Foundations & AI Prototyping - UX Laws, Information architecture, AI assisted prototyping, Spec driven development",
+                "Week 5: Growth & Metrics - Loops & Funnels, Product Market Fit Framework, How to define metrics, North Star, AAARR, guardrail metrics",
+                "Week 6: Tech Foundations - Client server architecture, APIs, Webhooks, SDKs, System Design Concepts, AI System architecture",
+                "Week 7: LLMs & Prompt Engineering - How LLMs work, Prompt types & CoT, System/role style guides, Prompt Decay & Debugging",
+                "Week 8: RAGs, Fine Tuning & AI Automations - Embeddings & Vector Databases, Chunking & retrieval, Workflow triggers & JSON, Orchestrating LLM steps",
+                "Week 9: AI Agents & Protocols - ReAct & planner–executor, Tool selection policies, Memory & RAG grounding, AI Agent Protocols: MCP, A2A, ACP"
+            ]
+        },
+        {
+            "title": "UI/UX Designer Fellowship",
+            "url": "https://nextleap.app/course/ui-ux-design-course",
+            "duration": "4 Months",
+            "live_hours": "100+ Hours",
+            "base_cost": "₹49,999",
+            "discounted_cost": "₹34,999",
+            "next_cohort": "Cohort 48 (Starts April 4)",
+            "deadline": "8 Mar 11:59 PM",
+            "avg_salary": "8-12 Lakhs",
+            "highest_salary": "31 Lakhs",
+            "placement_support": "1 Year",
+            "instructors": [
+                "Karthi Subbaraman",
+                "Kartik Singh",
+                "Ranganath Krishnamani",
+                "Neel Raj",
+                "Shahee Nannore Hiran",
+                "Marmik Patel",
+                "Shamayita Debnath",
+                "Arpita Dhir",
+                "Siddharth Jain",
+                "Pranav Gupta"
+            ],
+            "curriculum": [
+                "Week 1: Business Thinking in Design - Systems thinking, Understanding Business Models, Structured thinking with KPI trees, Actors, Actions & Entities",
+                "Week 2: Product Discovery & User Research - Impact Mapping & Opportunity sizing, User Segmentation, User Research Techniques, Journey Mapping & Personas",
+                "Week 3: Problem Framing & Ideation - Problem Framing Canvas, Ideation & Product Risks, Outcome-Opportunity-Solution tree, User Flows & Wireframing",
+                "Week 4: UX Foundations & AI Prototyping - UX Laws, Information architecture, AI assisted prototyping, Spec driven development",
+                "Week 5: Intro to Visual Design - Gestalt’s Principles, Scale & Visual Hierarchy, Balance & Contrast, Visual Design elements",
+                "Week 6: Visual Design Language - Moodboarding, Colour Theory, Typography, Grids & layouts",
+                "Week 7: Understanding Design Systems - Inclusive design practices, Design Accessibility, Atomic Design systems, Design Systems Tools",
+                "Week 8: Android Material Design Deepdive - Components in Android Material Design, Material Design Toolbar, Navigation View, RecyclerView and CardView",
+                "Week 9: iOS HIG Deepdive - Navigation & Layouts, User controls, Views, Inputs & Selection, Feedback & Status",
+                "Week 10: Agentic UX & AI Design",
+                "Week 11: Building a UX Design Portfolio",
+                "Week 12: Portfolio Presentation"
+            ]
+        },
+        {
+            "title": "Data Analyst Fellowship",
+            "url": "https://nextleap.app/course/data-analyst-course",
+            "duration": "16 Weeks",
+            "live_hours": "~100 Hours",
+            "base_cost": "₹49,999",
+            "discounted_cost": "₹34,999",
+            "next_cohort": "Cohort 48 (Starts April 4)",
+            "deadline": "8 Mar 11:59 PM",
+            "avg_salary": "8-10 Lakhs",
+            "highest_salary": "31 Lakhs",
+            "placement_support": "1 Year",
+            "instructors": [
+                "Sahil Agarwal",
+                "Sumit Shukla",
+                "Rishav Kumar",
+                "Akash Garg",
+                "Saksham Arora",
+                "Vivek Kumar",
+                "Praneeta Gupta",
+                "Ankush Kumar",
+                "Vishnubhotla Naga Bharadwaj"
+            ],
+            "curriculum": [
+                "Week 0: Data and Structured Thinking - Systems thinking, Understanding Business Models, Structured thinking with KPI trees",
+                "Week 1: Introduction to Data Analytics - Understanding Types of Data, Metrics & types of analysis, Steps in exploratory data analysis, Introduction to data visualisation",
+                "Week 2: Data Preparation using Excel - Basic Functions & Shortcuts, Data Formatting Techniques, Data Cleaning Techniques, Data Protection & Error Validation",
+                "Week 3: Advanced Data Analysis using Excel - Lookup & Merging Techniques, PivotTable & Grouping, Conditional Formatting, Scenario and Sensitivity Analysis",
+                "Week 4: Business Dashboarding with Excel - Charts and Visualization Techniques, Data Visualisation Best Practices, Pivot Charts, Building interactive Dashboards",
+                "Week 5: SQL Foundation - Introduction to Database, Selection, Filtering & Ordering, Data Types, Operators and functions, Aggregate and Group By commands",
+                "Week 6: Data Manipulation with SQL - Conditional and Case Statements, Working with date/timestamps, Joins, Subqueries",
+                "Week 7: Advanced Data Manipulation with SQL - Common Table Expression (CTE), Window functions in SQL, SET operators",
+                "Week 8: Data Preparation & Exploration with Tableau - Loading Data on Tableau, Data Cleaning & Preparation Techniques, Aggregation and Logical Functions, Filters & Analytics in Tableau",
+                "Week 9: Data Visualisation with Tableau - Understanding Chart Types, Creating Charts in Tableau, LOD and Calculated Fields, Creating Dashboards & Stories",
+                "Week 10: Introduction to Python - Python Environment setup, Programming Fundamentals, Data Types, Strings, Sets, Tuples & List",
+                "Week 11: Programming in Python - Dictionaries, Conditional Statements, Loop and Control Flow, Functions",
+                "Week 12: Data Analysis using Python",
+                "Week 13: Data Visualisation using Python",
+                "Week 14: LLMs & Prompt Engineering"
+            ]
+        },
+        {
+            "title": "Business Analyst Fellowship",
+            "url": "https://nextleap.app/course/business-analyst-course",
+            "duration": "18 Weeks",
+            "live_hours": "150+ Hours",
+            "base_cost": "₹49,999",
+            "discounted_cost": "₹34,999",
+            "next_cohort": "Cohort 48 (Starts April 4)",
+            "deadline": "8 Mar 11:59 PM",
+            "avg_salary": "8-10 Lakhs",
+            "highest_salary": "31 Lakhs",
+            "placement_support": "1 Year",
+            "instructors": [
+                "Arindam Mukherjee",
+                "Sahil Agarwal",
+                "Saksham Arora",
+                "Rishav Kumar",
+                "Varun Talikoti",
+                "Akash Garg",
+                "Praneeta Gupta",
+                "Ankush Kumar",
+                "Shashank Mittal"
+            ],
+            "curriculum": [
+                "Week 1: Business Models & KPIs - Systems thinking, Understanding Business Models, Structured thinking with KPI trees, Actors, Actions & Entities",
+                "Week 2: Market Sizing & User Research - Impact Mapping & Opportunity sizing, User Segmentation, User Research Techniques, Journey Mapping & Personas",
+                "Week 3: Problem Framing & Requirements Gathering - Problem Framing Canvas, Ideation & Product Risks, Outcome-Opportunity-Solution tree, Business Requirements Document (BRD)",
+                "Week 4: Metrics & Data Instrumentation - How to define metrics, North Star, AAARR, guardrail metrics, Events & Variables, Data analysis techniques",
+                "Week 5: Introduction to Data Analytics - Understanding Types of Data, Metrics & types of analysis, Steps in exploratory data analysis, Introduction to data visualisation",
+                "Week 6: Data Preparation using Excel - Basic Functions & Shortcuts, Data Formatting Techniques, Data Cleaning Techniques, Data Protection & Error Validation",
+                "Week 7: Advanced Data Analysis using Excel - Lookup & Merging Techniques, PivotTable & Grouping, Conditional Formatting, Scenario and Sensitivity Analysis",
+                "Week 8: SQL Foundation - Introduction to Database, Selection, Filtering & Ordering, Data Types, Operators and functions, Aggregate and Group By commands",
+                "Week 9: Data Manipulation with SQL - Conditional and Case Statements, Working with date/timestamps, Joins, Subqueries",
+                "Week 10: Advanced Data Manipulation with SQL - Common Table Expression (CTE), Window functions in SQL, SET operators",
+                "Week 11: Introduction to Python",
+                "Week 12: Programming in Python",
+                "Week 13: Data Analysis using Python",
+                "Week 14: AI for Business Analysts"
+            ]
+        },
+        {
+            "title": "Applied Generative AI Bootcamp",
+            "url": "https://nextleap.app/course/generative-ai-course",
+            "duration": "10 Weeks",
+            "live_hours": "60+ Hours",
+            "base_cost": "₹39,999",
+            "discounted_cost": "₹31,999",
+            "next_cohort": "Mar 14",
+            "deadline": "N/A",
+            "avg_salary": "N/A",
+            "highest_salary": "N/A",
+            "placement_support": "Certification",
+            "instructors": [
+                "Arindam Mukherjee",
+                "Eshan Tiwari",
+                "Taruna Manchanda",
+                "Kartik Singh",
+                "Pranav Pathak"
+            ],
+            "curriculum": [
+                "Week 1: AI System Design - APIs, Webhooks, SDKs, System Design Principles, AI system architecture, Probabilistic vs deterministic design",
+                "Week 2: LLMs & Prompt Engineering - How LLMs work, Prompt types & CoT, System/role style guides, Debugging prompt failures",
+                "Week 3: RAGs & AI Workflow Automation - Embeddings & vector databases, Chunking & retrieval, Workflow triggers & JSON, Orchestrating LLM steps",
+                "Week 4: AI Agents & Protocols - ReAct & planner–executor, Tool selection policies, Memory & RAG grounding, MCP basics & scope",
+                "Week 5: AI Output Evaluation - Failure modes & bias, Eval rubrics & metrics, Golden sets & A/B tests, LLM-as-judge limits",
+                "Week 6: Building Voice Agents - Voice UX & latency, STT→LLM→TTS loop, Privacy, consent, fallback, Speech to Speech models",
+                "Week 7: Advanced AI Prototyping - Principles of vibe coding, Choosing the right tool, UI to full-stack prototype, Cost & latency logging",
+                "Week 8: AI Product Strategy - Identifying AI use cases, Understanding trade-offs, AI Growth Metrics, AI Virality & Distribution Loops",
+                "Week 9 & 10: Capstone Project & Demo Day - Group Demos (upto 3 members), Combines automation, agent design, RAG, and output evaluation, Prepare for Demo Day presentation"
+            ]
+        }
+    ],
+    "terminology": [
+        {
+            "term": "Cohort",
+            "meaning": "A cohort at NextLeap refers to a specific batch of students starting the fellowship together. For example, 'Cohort 48' is the 48th iteration of the program.",
+            "context": "The fact that Cohort 48 is starting indicates that 47 batches have successfully been launched or completed previously."
+        },
+        {
+            "term": "PM",
+            "meaning": "PM stands for Product Manager Fellowship.",
+            "context": "NextLeap offers a 16-week Product Manager Fellowship."
+        },
+        {
+            "term": "UX",
+            "meaning": "UX or UI/UX refers to the UI/UX Designer Fellowship.",
+            "context": "The UI/UX Designer Fellowship is a 4-month program."
+        },
+        {
+            "term": "DA",
+            "meaning": "DA stands for Data Analyst Fellowship.",
+            "context": "The Data Analyst Fellowship is a 16-week program."
+        },
+        {
+            "term": "BA",
+            "meaning": "BA stands for Business Analyst Fellowship.",
+            "context": "The Business Analyst Fellowship is an 18-week program."
+        },
+        {
+            "term": "GenAI",
+            "meaning": "GenAI or AI refers to the Applied Generative AI Bootcamp.",
+            "context": "The Applied Generative AI Bootcamp is a 10-week intensive course."
+        }
+    ]
+}

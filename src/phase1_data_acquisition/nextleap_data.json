@@ -1,0 +1,86 @@
+{
+  "Product Manager Fellowship": {
+    "duration": "16 Weeks",
+    "hours": "100+ Live Hours",
+    "cost": "₹34,999",
+    "next_cohort": "Cohort 48, starting Apr 4",
+    "instructors": [
+      "Arindam Mukherjee",
+      "Kartik Singh",
+      "Eshan Tiwari",
+      "Shailesh Sharma",
+      "Prashanth Bhaskar",
+      "Akash Agrawal",
+      "Ankita Pathak",
+      "Devansh Jain",
+      "Nikita Agrawal",
+      "Parth Dixit",
+      "Anuj Saxena"
+    ]
+  },
+  "UI/UX Designer Fellowship": {
+    "duration": "4 Months",
+    "hours": "100+ Live Hours",
+    "cost": "₹34,999",
+    "next_cohort": "Cohort 48, starting Apr 4",
+    "instructors": [
+      "Karthi Subbaraman",
+      "Kartik Singh",
+      "Ranganath Krishnamani",
+      "Neel Raj",
+      "Shahee Nannore Hiran",
+      "Marmik Patel",
+      "Shamayita Debnath",
+      "Arpita Dhir",
+      "Siddharth Jain",
+      "Pranav Gupta"
+    ]
+  },
+  "Data Analyst Fellowship": {
+    "duration": "16 Weeks",
+    "hours": "~100 Live Hours",
+    "cost": "₹34,999",
+    "next_cohort": "Cohort 48, starting Apr 4",
+    "instructors": [
+      "Sahil Agarwal",
+      "Sumit Shukla",
+      "Rishav Kumar",
+      "Akash Garg",
+      "Saksham Arora",
+      "Vivek Kumar",
+      "Praneeta Gupta",
+      "Ankush Kumar",
+      "Vishnubhotla Naga Bharadwaj"
+    ]
+  },
+  "Business Analyst Fellowship": {
+    "duration": "18 Weeks",
+    "hours": "150+ Live Hours",
+    "cost": "₹34,999",
+    "next_cohort": "Cohort 48, starting Apr 4",
+    "instructors": [
+      "Arindam Mukherjee",
+      "Sahil Agarwal",
+      "Saksham Arora",
+      "Rishav Kumar",
+      "Varun Talikoti",
+      "Akash Garg",
+      "Praneeta Gupta",
+      "Ankush Kumar",
+      "Shashank Mittal"
+    ]
+  },
+  "Applied Generative AI Bootcamp": {
+    "duration": "10 Weeks",
+    "hours": "60+ Live Hours",
+    "cost": "₹31,999",
+    "next_cohort": "Mar 14",
+    "instructors": [
+      "Arindam Mukherjee",
+      "Eshan Tiwari",
+      "Taruna Manchanda",
+      "Kartik Singh",
+      "Pranav Pathak"
+    ]
+  }
+}
