@@ -20,8 +20,7 @@ jobs:
           
       - name: Install Dependencies
         run: |
-          pip install chromadb openai python-dotenv
-          # Note: In a real scenario, we'd install scraper deps like beautifulsoup4 or playwright here
+          pip install -r requirements.txt
           
       - name: Run Sync Engine
         env:
