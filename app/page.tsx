@@ -79,8 +79,8 @@ export default function NextLeapChatApp() {
     setMessages((prev) => [...prev, aiMsg]);
 
     try {
-      // Use relative path for Vercel unified deployment
-      const response = await fetch("/api/v1/chat/stream", {
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "";
+      const response = await fetch(`${backendUrl}/v1/chat/stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: input, session_id: sessionId }),

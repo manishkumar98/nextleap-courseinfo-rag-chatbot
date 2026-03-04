@@ -61,13 +61,24 @@ An intelligent RAG (Retrieval-Augmented Generation) chatbot designed to provide 
 
 ## 🚢 Deployment
 
-### Vercel (Unified App)
-1. Project Root Directory: **Leave Empty**.
-2. Framework Preset: **Next.js**.
-3. Add Environment Variables: `OPENAI_API_KEY`, `GROQ_API_KEY`.
+> [!IMPORTANT]
+> **Why separate deployments?** The Python AI libraries (Torch, Transformers, ChromaDB) are over 5GB, which exceeds Vercel's 500MB serverless limit. We use **Render** for the backend because it supports large containerized environments.
 
-### Streamlit (Standalone)
-Link your repo to [Streamlit Cloud](https://share.streamlit.io) and set the main file to `streamlit_app.py`.
+### 1. Backend (FastAPI) -> Deploy on [Render](https://render.com)
+1.  **New Web Service**: Connect your GitHub repo.
+2.  **Runtime**: Python 3.
+3.  **Build Command**: `pip install -r requirements.txt`.
+4.  **Start Command**: `python server.py`.
+5.  **Env Vars**: Add `OPENAI_API_KEY`, `GROQ_API_KEY`.
+
+### 2. Frontend (Next.js) -> Deploy on [Vercel](https://vercel.com)
+1.  **Project Root**: Leave empty.
+2.  **Env Var**: Add `NEXT_PUBLIC_BACKEND_URL` (Set this to your **Render URL**, e.g., `https://my-api.onrender.com`).
+
+### 3. Standalone (Streamlit) -> Deploy on [Streamlit Cloud](https://share.streamlit.io)
+If you prefer the single-page version:
+1.  Main file: `streamlit_app.py`.
+2.  Add keys to **Secrets**.
 
 ## 📜 License
 MIT

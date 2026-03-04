@@ -7,13 +7,12 @@ from pydantic import BaseModel
 from typing import List, Optional
 from fastapi.responses import StreamingResponse
 
-# Add project root to path (parent directory of 'api')
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Add project root to path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from src.phase4_generation.generator import NextLeapGenerator
 
-app = FastAPI()
+app = FastAPI(title="NextLeap RAG API")
 
-# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -22,20 +21,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize Generator
 generator = None
 try:
     generator = NextLeapGenerator()
 except Exception as e:
-    print(f"GenError: {e}")
+    print(f"❌ Initialization Error: {e}")
 
 class ChatRequest(BaseModel):
     query: str
     session_id: Optional[str] = "default"
 
-@app.get("/health")
-def health():
-    return {"status": "healthy"}
+@app.get("/")
+def root():
+    return {"status": "online", "service": "NextLeap RAG Backend"}
 
 @app.post("/v1/chat/stream")
 async def chat_stream(request: ChatRequest):
@@ -59,7 +57,7 @@ async def chat_stream(request: ChatRequest):
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
 
-# Catch-all for Vercel
-@app.get("/{full_path:path}")
-async def catch_all(full_path: str):
-    return {"message": "NextLeap API is active. Use /api/v1/chat/stream for AI queries."}
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
