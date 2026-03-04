@@ -7,8 +7,8 @@ from pydantic import BaseModel
 from typing import List, Optional
 from fastapi.responses import StreamingResponse
 
-# Add project source to path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Add project root to path (parent directory of 'api')
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.phase4_generation.generator import NextLeapGenerator
 
 app = FastAPI()
